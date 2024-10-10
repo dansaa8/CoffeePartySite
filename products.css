@@ -1,7 +1,8 @@
-.coffemachines-ctr {
+.products-ctr {
     display: flex;
     flex-direction: column;
     background-color: (249, 249, 249);
+    border-top: 4px solid rgb(94, 54, 28);
 }
 
 .content-wrapper {
@@ -13,13 +14,38 @@
     border-radius: 5px;
 }
 
-.coffemachines-ctr h2 {
+
+.products-ctr h2 {
     text-align: center;
     color: rgb(94, 54, 28);
     font-size: 34px;
     font-style: italic;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
+
+.coffeeparty-ctr h2 {
+    text-align: center;
+    color: rgb(94, 54, 28);
+    font-size: 34px;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.business h3,
+.private h3 {
+    text-align: center;
+    color: rgb(94, 54, 28);
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(164, 95, 49);
+}
+
+
 
 .coffemachines-grid {
     display: grid;
