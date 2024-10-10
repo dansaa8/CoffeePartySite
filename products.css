@@ -1,0 +1,82 @@
+.coffemachines-ctr {
+    display: flex;
+    flex-direction: column;
+    background-color: (249, 249, 249);
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;  
+    background-color: white;
+    padding: 50px;
+    max-width: 1120px;
+    border-radius: 5px;
+}
+
+.coffemachines-ctr h2 {
+    text-align: center;
+    color: rgb(94, 54, 28);
+    font-size: 34px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.coffemachines-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.coffemachine {
+    /* max-width: 250px; */
+    width: 100%;
+    border: 1px solid rgb(94, 54, 28);
+    margin-bottom: 50px;
+}
+
+.machine-details {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    border-bottom: 1px solid darkgray;
+}
+
+.machine-details p {
+    margin: 0px;
+}
+
+.machine-details .name {
+    font-size: x-large;
+}
+
+.machine-details .price {
+    font-size: large;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+.machine-info {
+    text-align: center;
+}
+
+@media (max-width: 1050px) {
+    .coffemachines-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .coffemachines-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .coffemachines-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
