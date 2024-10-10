@@ -5,14 +5,28 @@
     }
 
     header {
-        background-color: rgb(122, 78, 78);
-        border-bottom: 1px solid  rgb(81, 52, 52);
+        background-color: rgb(54, 54, 54);
+        border-top: 1px solid  rgb(94, 54, 28);
+        border-bottom: 4px solid  rgb(94, 54, 28);
+    }
+    
+    footer {
+        background-color: rgb(54, 54, 54);
+        border-top: 4px solid  rgb(94, 54, 28);
+        border-bottom: 1px solid  rgb(94, 54, 28);
     }
 
-    footer {
-        background-color: rgb(122, 78, 78);
-        border-bottom: 1px solid  rgb(81, 52, 52);
+
+    .logo-ctr {
+        display: flex;
+        gap: 10px;
     }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
 
     h2 {
         font-size: 24px;
@@ -57,8 +71,8 @@
         width: 100%;
         height: auto;           
         overflow: auto  ;
-        border-top-left-radius: 1%;
-        border-top-right-radius: 1%;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
         object-fit: cover; 
         border-top: 1px solid darkgray;
     }
@@ -66,8 +80,7 @@
     .site-branding-ctr div p {
         max-width: 400px;        
         border-top: 1px solid darkgray;
-        border-radius: 1%;
-        padding: 10px;
+            padding: 10px;
     }
 
     @media (max-width: 750px) {

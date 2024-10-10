@@ -25,58 +25,67 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark flex-column">
+        <!-- Row for logo -->
+        <div class="w-100 d-flex justify-content-center">
             <a class="navbar-brand" href="index.html">
-                <img src="coffee-logo.svg" alt="Coffee Logo" class="d-inline-block align-top"
-                    style="width: 30px; height: 30px;" />
-                <h1> Coffee Shop </h1>
-            </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                <div class="logo-ctr text-center">
+                    <img class="logo" src="coffee-logo.svg" alt="Coffee Logo" class="d-inline-block align-top" />
+                    <h1 class="text-center">Coffee Shop</h1>
+                </div>
+            </a>
+        </div>
+
+        <!-- Row for navigation links -->
+        <div class="w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-evenly">
+                    <li class="nav-item active mx-3">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
 
     <section class="main-section">
         <div class="site-branding-ctr">
             <div>
-                <img src="https://picsum.photos/id/237/450/200">
+                <img src="https://picsum.photos/id/237/550/200">
                 <h2>Vilka är vi?</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis esse doloribus facere, officiis rem,
                     aspernatur commodi blanditiis alias aliquam adipisci, repellendus voluptatibus veniam accusantium
                     maxime consequuntur ex quisquam possimus dolorum. </p>
             </div>
             <div>
-                <img src="https://picsum.photos/id/237/450/200">
+                <img src="https://picsum.photos/id/237/550/200">
                 <h2>Vad gör vi?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloremque fugit culpa est, ut dolor
                     repudiandae! Inventore velit laborum amet dolorum consequatur. Voluptates, voluptatibus porro
                     dolores eveniet a veniam libero?</p>
             </div>
             <div>
-                <img src="https://picsum.photos/id/237/450/200">
+                <img src="https://picsum.photos/id/237/550/200">
                 <h2>Varför oss?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus aspernatur, quidem
                     consequatur iste dolor asperiores quas quo ducimus, provident eaque vero molestiae pariatur deserunt
                     sequi mollitia voluptatum qui incidunt?</p>
             </div>
             <div>
-                <img src="https://picsum.photos/id/237/450/200">
+                <img src="https://picsum.photos/id/237/550/200">
                 <h2>Kaffeparty, så fungerar det!</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolores cupiditate saepe possimus
                     vitae. Omnis deserunt mollitia saepe. Ullam reprehenderit necessitatibus ut consequuntur assumenda
@@ -86,7 +95,7 @@
     </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content text-light">
             <p>&copy; 2024</p>
             <p>Webmaster: dansaa8</p>
         </div>
