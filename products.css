@@ -18,15 +18,22 @@
 
 .coffeparty {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .business,
 .private {
     min-width: 400px;
     flex: 1 1 400px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(255, 249, 239);
+    margin: 10px;
+    border: 1px solid rgb(156, 134, 120);
+    border-radius: 3px;
 }
+
+
 
 .business h3,
 .private h3 {
@@ -35,8 +42,10 @@
     font-size: 24px;
     font-style: italic;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
 }
 
 .private h3::after,
@@ -44,20 +53,15 @@
     content: "";
     display: block;
     width: 100%;
-    height: 1px;
+    height: 0.5px;
     background-color: rgb(94, 54, 28);
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.private,
-.business {
-    background-color: rgb(255, 249, 239);
-    margin: 10px;
-    border: 1px solid rgb(156, 134, 120);
-    border-radius: 3px;
-}
+
+
 
 
 .products-ctr h2 {
@@ -90,7 +94,7 @@
     border-radius: 3px;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
 
     gap: 10px;
