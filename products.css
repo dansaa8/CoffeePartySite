@@ -7,6 +7,10 @@
     margin-bottom: 20px;
 }
 
+.products-ctr p{
+    font-size: 22px;
+}
+
 .products-ctr:not(:first-child) {
     margin-top: 20px;
 }
@@ -64,10 +68,10 @@
 
 
 
-.products-ctr h2 {
+.products-ctr h2, h1 {
     text-align: center;
     color: rgb(94, 54, 28);
-    font-size: 34px;
+    font-size: 28px;
     font-style: italic;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -76,8 +80,13 @@
     display: inline-block;
 }
 
+.products-ctr h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
 /* Creates an underscore */
-.products-ctr h2::after {
+.products-ctr h2::after, h1::after {
     content: "";
     display: block;
     width: 100%;
@@ -141,6 +150,63 @@
 
 .machine-info {
     text-align: center;
+}
+
+.company-info {
+    text-align: center;
+    padding: 10px 0;
+    max-width: 750px;
+    margin: auto;
+}
+
+.company-info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+.contact-card {
+    width: 45%;
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid rgb(94, 54, 28);
+    border-radius: 3px;
+    text-align: center;   
+}
+.contact-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.contact-card h3 {
+    margin-top: 0;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+.contact-card a {
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .contact-card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1050px) {

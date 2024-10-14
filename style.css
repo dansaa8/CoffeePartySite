@@ -5,7 +5,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    color: rgb(57, 57, 57);
+    color: rgb(94, 54, 28);
 }
 
 header {
@@ -37,6 +37,7 @@ footer {
 
 .main-section {
     max-width: 1120px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
 }

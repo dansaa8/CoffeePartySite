@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Products</title>
+
+    <!-- Bootstrap CSS & JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -16,36 +18,94 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="coffee-logo.svg" alt="Coffee Logo" class="d-inline-block align-top"
-                style="width: 30px; height: 30px;" />
-            Coffee Shop
-        </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
 
-            </ul>
-        </div>
-    </nav>
-</header>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark flex-column">
+            <!-- Row for logo -->
+            <div class="w-100 d-flex justify-content-center">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-ctr text-center">
+                        <img class="logo" src="coffee-logo.svg" alt="Coffee Logo" />
+                        <h1 class="text-center">Coffee Shop</h1>
+                    </div>
+                </a>
+            </div>
 
+            <!-- Row for navigation links -->
+            <div class="w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-evenly">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item active mx-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-section">
+        <div class="p-content-wrapper">
+            <section class="products-ctr">
+                <h1>Om oss</h1>
+                <div class="company-info">
+                    <p>Vi är ett företag som specialiserar oss på kaffe och kaffemaskiner</p>
+                    <p>Vi levererar Kaffe och Kaffemaskiner av allra högsta kvalitet</p>
+                    <p>Vi annordnar dessutom vårat omtyckta kaffeparty-event där våra gäster
+                        får möjlighet att prova på våra olika kaffesorter och ges möjlihet till att köpa dem.
+                    </p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="products-ctr">
+                <h2>Contact Information</h2>
+                <div class="contact-section">
+                    <!-- CEO Contact Card -->
+                    <div class="contact-card">
+                        <img src="https://picsum.photos/id/237/100/100" alt="Coffee Machine">
+                        <h3>Kalle Jönsson</h3>
+                        <p>VD</p>
+                        <p>Phone: +46 123 456</p>
+                        <p>Email: <a href="mailto:kalle_jonsson@gmail.com">kalle_jonsson@gmail.com</a></p>
+                    </div>
+
+                    <!-- HR Manager Contact Card -->
+                    <div class="contact-card">
+                        <img src="https://picsum.photos/id/237/100/100" alt="Coffee Machine">
+                        <h3>Palle Kuling</h3>
+                        <p>HR Ansvarig</p>
+                        <p>Phone: +46 123 456</p>
+                        <p>Email: <a href="mailto:palle_kuling@gmail.com">palle_kuling@gmail.com</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content text-light">
+            <p>&copy; 2024</p>
+            <p>Webmaster: dansaa8</p>
+        </div>
+    </footer>
 </body>
 
 </html>
