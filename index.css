@@ -1,7 +1,7 @@
 .site-branding-ctr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;  
+    gap: 30px;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
@@ -10,11 +10,11 @@
 }
 
 .site-branding-ctr div {
-    display: flex;              
-    flex-direction: column;      
-    align-items: center;       
-    text-align: justify; 
-    background-color: rgb(238, 238, 238); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: rgb(238, 238, 238);
     border: 1px solid darkgray;
     border-radius: 5px;
     overflow: hidden;
@@ -23,6 +23,20 @@
 .site-branding-ctr h2 {
     padding: 15px 0 10px;
     font-size: 24px;
+    position: relative;
+    display: inline-block;  
+}
+
+
+.site-branding-ctr div h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(94, 54, 28);
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .site-branding-ctr img {
@@ -35,7 +49,7 @@
 }
 
 .site-branding-ctr div p {
-    max-width: 400px;        
+    max-width: 400px;
     padding: 10px;
 }
 
